@@ -11,8 +11,8 @@ import java.util.Set;
 import javax.swing.JButton;
 import javax.swing.event.EventListenerList;
 import tictactoetcp.model.BoardModel;
+import tictactoetcp.model.TCP;
 import tictactoetcp.model.TCPClient;
-import tictactoetcp.model.TCPInterface;
 import tictactoetcp.model.TCPServer;
 import tictactoetcp.view.BoardView;
 
@@ -21,7 +21,7 @@ import tictactoetcp.view.BoardView;
  * @author iqbal
  */
 public class BoardController {
-    private TCPInterface tcpControl;
+    private TCP tcpControl;
     private BoardView view;
     private BoardModel board;
     private int i ;

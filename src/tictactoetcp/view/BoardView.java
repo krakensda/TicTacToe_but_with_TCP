@@ -6,6 +6,7 @@
 package tictactoetcp.view;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
@@ -29,7 +30,7 @@ public class BoardView extends javax.swing.JFrame {
     //end of object on the view
 
     //getter
-        public JButton[][] getSquareButton() { return squareButton; }
+    public JButton[][] getSquareButton() { return squareButton; }
     //end of getter
  
     //myfunction
@@ -38,6 +39,7 @@ public class BoardView extends javax.swing.JFrame {
             for (int j = 0; j < 3; j++) {
                 squareButton[i][j] = new JButton();
                 squareButton[i][j].setBackground(BG_BUTTON_COLOR);
+                squareButton[i][j].setFont(new Font("Arial", Font.BOLD, 25));
                 boardPanel.add(squareButton[i][j]);
             }
         }
